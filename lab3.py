@@ -35,14 +35,16 @@ class Contact:
     def get_contact_count(cls):
         return Contact.total_contacts
 
-
-
+    def __str__(self):
+        return f"{self.name}, {self.email}, {self.Pnumber}"
+'''
 Contact1 = Contact("joe", "0478230984", "joe@gmail.com")
 Contact2 = Contact("bob", "0482193746", "bob@gmail.com")
 
-print(Contact1.name, Contact1.Pnumber, Contact1.email)
-print(Contact2.name, Contact2.Pnumber, Contact2.email)
+print(Contact1)
+print(Contact2)
 
 Contact1.check_email()
 
 print(Contact.get_contact_count())
+'''
